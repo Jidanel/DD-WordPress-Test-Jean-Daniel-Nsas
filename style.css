@@ -1,0 +1,92 @@
+/*
+ Theme Name: hello-elementor-Child
+ Template: hello-elementor
+ Author: Nsas Nsas Jean Daniel
+ Version: 1.0
+*/
+
+/* Importation des styles du thème parent */
+@import url("../hello-elementor/style.css");
+
+/* Styles généraux */
+body {
+    color: #333;
+}
+
+/* Styles pour le header */
+.header {
+    background-color: #1a1a1a;
+}
+
+a {
+    color: #CC3366;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333366;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .search-bar {
+        flex-direction: column;
+    }
+}
+
+/* Conteneur principal pour la page des Deer Tests */
+.deer-test-content, .test-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.deer-test-content h1, .test-container h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.deer-test-content p, .test-container p, .deer-test-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.deer-test-content .description, .test-container .description {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.cover-image img, .test-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.test-container a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.test-container a:hover {
+    background-color: #005f8a;
+}
